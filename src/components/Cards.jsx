@@ -17,11 +17,26 @@ const Cards = () => {
     request();
   }, []);
 
+  const [input, setInput] = useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const text = e.target[0].value;
+
+    setInput(text);
+  };
+
   return (
     <>
-      {
-        images.map((img) => { return <Card key={img.id} img={img.urls.thumb} /> })
-      }
+      <form onSubmit={handleSubmit}>
+        <label>
+          {" "}
+          Search: <input type="text" name="inputText" />
+        </label>{" "}
+        <hr />
+      </form>
+      {images.map((img) => {
+        return <Card key={img.id} img={img.urls.thumb} />;
+      })}
     </>
   );
 };
