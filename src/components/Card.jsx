@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Card = ({ img }) => {
   return (
-    <div className="card" style={{ width: "15rem" }}>
+    <div className="card m-1 p-0" style={{ width: "15rem" }}>
       <img src={img} className="card-img-top" alt="random" />
     </div>
   );
