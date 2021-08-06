@@ -11,7 +11,7 @@ const FormImg = ({ handleSubmit }) => {
         <input
           className="col col-sm col-lg mx-1 p-0"
           type="text"
-          placeholder="Write some awesome stuffs..."
+          placeholder=" write some awesome stuffs..."
           name="inputText"
         />
         <button
