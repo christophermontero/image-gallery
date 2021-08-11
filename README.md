@@ -1,2 +1,2 @@
 # image-gallery
-Gallery to fetch non commercial licence images
+Gallery to fetch non commercial license images
